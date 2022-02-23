@@ -31,15 +31,15 @@ namespace WPF_RestaurantMenu
         }
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("To be implemeted!", "Message");
+            MessageBox.Show("To be added: " + txtIdMenuItem.Text + ":" + txtName.Text , "Message");
         }
         private void UpdateButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("To be implemeted!", "Message");
+            MessageBox.Show("To be updated: " + txtIdMenuItem.Text + ":" + txtName.Text, "Message");
         }
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("To be implemeted!", "Message");
+            MessageBox.Show("To be deleted: " + txtIdMenuItem.Text + ":" + txtName.Text, "Message");
         }
     }
 }
