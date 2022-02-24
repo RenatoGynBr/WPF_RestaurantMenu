@@ -24,7 +24,7 @@ namespace WPF_RestaurantMenu
         }
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            var m1 = new ViewModels.MenuItemViewModel();
+            //var m1 = new ViewModels.MenuItemViewModel();
             //var i = 99;
             //MenuItemModel mi = new MenuItemModel(i, "NewItem", true, 0);
             //MessageBox.Show("To be added: " + txtIdMenuItem.Text + ":" + txtName.Text, "Message");
@@ -35,7 +35,7 @@ namespace WPF_RestaurantMenu
         }
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("To be deleted: " + txtIdMenuItem.Text + ":" + txtName.Text, "Message");
+            //MessageBox.Show("To be deleted: " + txtIdMenuItem.Text + ":" + txtName.Text, "Message");
         }
     }
 }
