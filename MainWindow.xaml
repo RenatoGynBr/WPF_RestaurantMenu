@@ -113,8 +113,8 @@
                 </ListViewItem>
             </ListView>
         </StackPanel>-->
-        <Grid Grid.Row="2" Background="AliceBlue">
-            <TextBlock Foreground="Brown" Name="txtMessage" Text="Message:" HorizontalAlignment="Left" FontWeight="Bold" Margin="10"/>
+        <Grid Grid.Row="2" Background="White">
+            <TextBlock Foreground="Brown" Name="txtMessage" Text="Message:" HorizontalAlignment="Left" FontWeight="Bold" Margin="7"/>
         </Grid>
     </Grid>
 </Window>
