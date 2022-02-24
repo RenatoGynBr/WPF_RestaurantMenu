@@ -30,7 +30,8 @@
                   DisplayMemberPath="Name" 
                   Margin="0,0,0,28" 
                   FontWeight="Bold"
-                   FontSize="14"
+                  FontSize="14"
+                  SelectionMode="Single"
                   Background="#FF363636" Foreground="Beige"
         Grid.RowSpan="2" />
 
@@ -62,10 +63,10 @@
             <TextBox Grid.Column="2" Grid.Row="3" Name="txtName" Text="{Binding Path=Name}" Foreground="Blue" Margin="5"/>
 
             <TextBlock Grid.Column="1" Grid.Row="4" Foreground="Gray" Text="PRICE: " FontWeight="Bold" Margin="5"/>
-            <TextBox Grid.Column="2" Grid.Row="4" Name="txtPrice" Text="{Binding Path=Price}" Foreground="Blue" Margin="5"/>
+            <TextBox Grid.Column="2" Grid.Row="4" Name="txtPrice" Text="{Binding Path=Price, Mode=TwoWay, StringFormat=N2}" Foreground="Blue" Margin="5"/>
 
             <TextBlock Grid.Column="1" Grid.Row="5" Foreground="Gray" Text="ACTIVE: " FontWeight="Bold" Margin="5"/>
-            <TextBox Grid.Column="2" Grid.Row="5" Name="txtActive" Text="{Binding Path=Active}" Foreground="Blue" Margin="5"/>
+            <CheckBox Grid.Column="2" Grid.Row="5" Name="txtActive" IsChecked="{Binding Path=Active, Mode=TwoWay}" Foreground="Blue" Margin="5"/>
 
         </Grid>
 
