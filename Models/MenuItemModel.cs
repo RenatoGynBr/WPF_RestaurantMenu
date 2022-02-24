@@ -11,6 +11,9 @@ namespace WPF_RestaurantMenu.Models
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        public MenuItemModel()
+        {
+        }
         public MenuItemModel(int id, string name, bool active, decimal price)
         {
             try

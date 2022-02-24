@@ -2,16 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using WPF_RestaurantMenu.Models;
 
 namespace WPF_RestaurantMenu
 {
@@ -23,6 +15,7 @@ namespace WPF_RestaurantMenu
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = this;
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
@@ -31,11 +24,14 @@ namespace WPF_RestaurantMenu
         }
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("To be added: " + txtIdMenuItem.Text + ":" + txtName.Text , "Message");
+            var m1 = new ViewModels.MenuItemViewModel();
+            //var i = 99;
+            //MenuItemModel mi = new MenuItemModel(i, "NewItem", true, 0);
+            //MessageBox.Show("To be added: " + txtIdMenuItem.Text + ":" + txtName.Text, "Message");
         }
         private void UpdateButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("To be updated: " + txtIdMenuItem.Text + ":" + txtName.Text, "Message");
+            txtMessage.Text = "Message: UPDATED";
         }
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
